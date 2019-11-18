@@ -1,0 +1,28 @@
+.site-header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+    background-color: #fff;
+}
+
+.site-branding {
+    display: flex;
+    padding: 6px 0 6px 12px;
+    .custom-logo {
+        width: 168px;
+        max-width: none;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .site-branding {
+        .custom-logo {
+            width: 300px;
+        }
+    }
+}
