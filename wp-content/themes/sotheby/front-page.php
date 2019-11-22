@@ -24,7 +24,7 @@
 	<div class="hero home" style="background: url('<?= $hero_banner['hero_image']['url'] ?>') 50% no-repeat">
 		<div class="container" style="text-align: center;">	
 			<h1><?= $hero_banner['hero_title']; ?></h1><br/>
-			<button><?= $hero_banner['hero_cta']; ?></button>
+			<button><?= do_shortcode('[video_lightbox_vimeo5 video_id="338009804" width="640" height="480" anchor="' . $hero_banner['hero_cta'] .'"]'); ?></button>
 		</div>
 	</div>
 

@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'c1n442796387527' );
+define( 'DB_NAME', 'ehb942976691814' );
 
 /** MySQL database username */
-define( 'DB_USER', 'c1n442796387527' );
+define( 'DB_USER', 'ehb942976691814' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'OD|qbrNvs_2|@' );
+define( 'DB_PASSWORD', 'e!Dr_yC5Bc_' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'c1n442796387527.db.42796387.9cb.hostedresource.net:3309' );
+define( 'DB_HOST', 'ehb942976691814.db.42976691.600.hostedresource.net' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'w&RSDvIN@*YJ%ctcGssr' );
-define( 'SECURE_AUTH_KEY',  'fsx$(LE)V!5(1Csk_H3$' );
-define( 'LOGGED_IN_KEY',    'wpyxmS)Gh*SsY5NWx4fO' );
-define( 'NONCE_KEY',        'btf6jy4qmY5ajAckGOB=' );
-define( 'AUTH_SALT',        'RsyFzO/_U)TNYrKJarp7' );
-define( 'SECURE_AUTH_SALT', 'E$7fxk5WzM=+qVCBRQAz' );
-define( 'LOGGED_IN_SALT',   'QM/B4a16X752@Sf/VULh' );
-define( 'NONCE_SALT',       'WZI@1)I!K_hIp$p5@$PE' );
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
@@ -63,7 +63,7 @@ define( 'NONCE_SALT',       'WZI@1)I!K_hIp$p5@$PE' );
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_rp7zghdss0_';
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -77,13 +77,7 @@ $table_prefix = 'wp_rp7zghdss0_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', false );
-//define( 'WP_CACHE', true );
-require_once( dirname( __FILE__ ) . '/gd-config.php' );
-define( 'FS_METHOD', 'direct' );
-define( 'FS_CHMOD_DIR', (0705 & ~ umask()) );
-define( 'FS_CHMOD_FILE', (0604 & ~ umask()) );
-
+define( 'WP_DEBUG', true );
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -94,3 +88,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
+
+define('FS_METHOD', 'direct');
